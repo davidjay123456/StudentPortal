@@ -6,7 +6,7 @@ export default function AboutScreen() {
       <Text style={styles.title}>About</Text>
 
       <Text style={styles.text}>
-        The application shows how to use Flexbox for responsive layouts, StyleSheet for styling, and Stack Navigation for transitions between the Home, About, Contact, and Profile screens.
+        This mobile application is developed by David Jay Ongcoy, and it is used to view the student portal. It uses a stylesheet, flexbox, navigation, and styling.
       </Text>
     </View>
   );

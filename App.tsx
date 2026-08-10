@@ -6,12 +6,16 @@ import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
 import ContactScreen from './screens/ContactScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import RegistrationScreen from './screens/RegistrationScreen';
+import SavedStudentScreen from './screens/SavedStudentScreen';
 
 export type RootStackParamList = {
   Home: undefined;
   About: undefined;
   Contact: undefined;
   Profile: undefined;
+  Registration: undefined;
+  SavedStudent: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -51,6 +55,18 @@ export default function App() {
         <Stack.Screen
           name="Profile"
           component={ProfileScreen}
+        />
+
+        <Stack.Screen
+          name="Registration"
+          component={RegistrationScreen}
+          options={{ title: 'Student Registration' }}
+        />
+
+        <Stack.Screen
+          name="SavedStudent"
+          component={SavedStudentScreen}
+          options={{ title: 'Saved Student Information' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

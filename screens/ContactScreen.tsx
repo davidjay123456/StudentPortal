@@ -13,7 +13,7 @@ export default function ContactScreen() {
       <Text>223-1614</Text>
 
       <Text style={styles.info}>Address</Text>
-      <Text>Saint Michael's College, Iligan City, Lanao Del Norte, Philippines</Text>
+      <Text>Saint Michael's College</Text>
     </View>
   );
 }
