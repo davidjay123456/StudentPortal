@@ -14,7 +14,12 @@ export type RootStackParamList = {
   About: undefined;
   Contact: undefined;
   Profile: undefined;
-  Registration: undefined;
+
+  Registration: {
+    editMode?: boolean;
+    studentData?: any;
+  } | undefined;
+
   SavedStudent: undefined;
 };
 
